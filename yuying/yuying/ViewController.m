@@ -43,7 +43,7 @@
     
 #endif
     
-    _data_array = @[@"语音听写", @"", @"", @"", @"", @""];
+    _data_array = @[@"语音听写", @"语音合成", @"", @"", @"", @""];
     
     
 }
@@ -51,6 +51,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -96,6 +97,12 @@
     
     if ([cell.textLabel.text isEqualToString:@"语音听写"]) {
         identifier = @"dictationVC";
+        nextVC = [storyboard instantiateViewControllerWithIdentifier:identifier];
+        [self.navigationController pushViewController:nextVC animated:YES];
+    }
+    
+    if ([cell.textLabel.text isEqualToString:@"语音合成"]) {
+        identifier = @"SpeakerVC";
         nextVC = [storyboard instantiateViewControllerWithIdentifier:identifier];
         [self.navigationController pushViewController:nextVC animated:YES];
     }

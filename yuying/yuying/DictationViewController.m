@@ -16,6 +16,8 @@
 
 #import "SVProgressHUD.h"
 
+#define IFLY_APPID @"54abb52d"
+
 @interface DictationViewController ()
 
 @end
@@ -26,12 +28,34 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    _myTextView
+    _myTextView.text = nil;
+//    _myTextView.backgroundColor = [UIColor clearColor];
+    [self drawRect:_myTextView];
+    [_myTextView setTextContainerInset:UIEdgeInsetsMake(2, 2, 2, 2)];
+}
+
+- (void)drawRect:(UIView *)view {
+    view.layer.masksToBounds = NO;
+    
+    view.layer.borderWidth = 1.5f;
+    view.layer.cornerRadius = 5.0;
+    view.layer.borderColor = [UIColor redColor].CGColor;
+    
+    view.layer.shadowColor = [UIColor blackColor].CGColor;
+    view.layer.shadowOffset = CGSizeMake(1.0, -1.0);
+    view.layer.shadowOpacity = 1.0;  //阴影透明度
+    view.layer.shadowRadius = 5.0;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [_iflySpeechRecongnizer stopListening];
 }
 
 /*
@@ -45,6 +69,7 @@
 */
 
 - (IBAction)beginSay:(id)sender {
+    [self.view endEditing:YES];
     
     @try {
         [IFlySetting setLogFile:LVL_DETAIL];
@@ -52,7 +77,7 @@
         
         if (!_iflySpeechRecongnizer) {
             //创建语言配置
-            NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@,timeout=%@",@"549e46cd",@"20000"];
+            NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@,timeout=%@",IFLY_APPID,@"20000"];
             
             //所有服务启动前，需要确保执行createUtility
             [IFlySpeechUtility createUtility:initString];
@@ -79,6 +104,16 @@
     }
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
+
+#pragma mark - UITextViewDelegate
+
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
+    return YES;
+}
+
 #pragma mark - IFlySpeechRecognizerDelegate
 
 - (void) onError:(IFlySpeechError *) errorCode {
@@ -94,10 +129,8 @@
         [result appendString:key];
     }
     
-
+    _myTextView.text = [NSString stringWithFormat:@"%@%@",_myTextView.text, result];
     [SVProgressHUD dismiss];
-    
-    
 }
 
 @end

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>30AA454D-0A17-4384-A23A-F326499F33A0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MSCDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D76BC5A3BA94BBB737EA8BB4844D5C6A88DAF818</key>
+		<string>https://github.com/WeichaoLi/-.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>语音SDK/iOS_voice_1.095_549e46cd/sample/MSCDemo/MSCDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D76BC5A3BA94BBB737EA8BB4844D5C6A88DAF818</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/WeichaoLi/-.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D76BC5A3BA94BBB737EA8BB4844D5C6A88DAF818</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D76BC5A3BA94BBB737EA8BB4844D5C6A88DAF818</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E8%AF%AD%E9%9F%B3</string>
+		</dict>
+	</array>
+</dict>
+</plist>

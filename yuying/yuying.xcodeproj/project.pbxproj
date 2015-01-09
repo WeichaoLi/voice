@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2E08501A5CE092009E78E3 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2E084F1A5CE092009E78E3 /* iflyMSC.framework */; };
+		1B2E08521A5CE09A009E78E3 /* libSunFlower.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2E08511A5CE09A009E78E3 /* libSunFlower.a */; };
+		1B2E08551A5CE5D2009E78E3 /* SpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E08541A5CE5D2009E78E3 /* SpeakerViewController.m */; };
+		1B2E08701A5D0FA7009E78E3 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2E086F1A5D0FA7009E78E3 /* libz.1.2.5.dylib */; };
 		1B377F411A51227A003BA253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B377F401A51227A003BA253 /* main.m */; };
 		1B377F441A51227A003BA253 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B377F431A51227A003BA253 /* AppDelegate.m */; };
 		1B377F471A51227A003BA253 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B377F461A51227A003BA253 /* ViewController.m */; };
@@ -18,7 +22,6 @@
 		1B377F691A512394003BA253 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B377F681A512394003BA253 /* AddressBook.framework */; };
 		1B377F6B1A5123A7003BA253 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B377F6A1A5123A7003BA253 /* SystemConfiguration.framework */; };
 		1B377F6D1A5123AF003BA253 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B377F6C1A5123AF003BA253 /* AudioToolbox.framework */; };
-		1B377FAB1A514159003BA253 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B377FAA1A514158003BA253 /* iflyMSC.framework */; };
 		1B377FE51A514623003BA253 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B377FE41A514623003BA253 /* CoreTelephony.framework */; };
 		1B377FFE1A5146DA003BA253 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B377FB01A51444E003BA253 /* libz.dylib */; };
 		1B3780071A51494B003BA253 /* libPods-SVProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3780061A51494B003BA253 /* libPods-SVProgressHUD.a */; };
@@ -87,6 +90,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B2E084F1A5CE092009E78E3 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = lib/iflyMSC.framework; sourceTree = "<group>"; };
+		1B2E08511A5CE09A009E78E3 /* libSunFlower.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSunFlower.a; path = lib/sunflower/libSunFlower.a; sourceTree = "<group>"; };
+		1B2E08531A5CE5D2009E78E3 /* SpeakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerViewController.h; sourceTree = "<group>"; };
+		1B2E08541A5CE5D2009E78E3 /* SpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerViewController.m; sourceTree = "<group>"; };
+		1B2E086F1A5D0FA7009E78E3 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		1B377F3B1A51227A003BA253 /* yuying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yuying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B377F3F1A51227A003BA253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B377F401A51227A003BA253 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,7 +112,6 @@
 		1B377F681A512394003BA253 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		1B377F6A1A5123A7003BA253 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1B377F6C1A5123AF003BA253 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		1B377FAA1A514158003BA253 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = lib/iflyMSC.framework; sourceTree = "<group>"; };
 		1B377FAC1A514436003BA253 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1B377FAE1A514446003BA253 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1B377FB01A51444E003BA253 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -123,11 +130,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2E08701A5D0FA7009E78E3 /* libz.1.2.5.dylib in Frameworks */,
 				1B377FFE1A5146DA003BA253 /* libz.dylib in Frameworks */,
 				1B377FE51A514623003BA253 /* CoreTelephony.framework in Frameworks */,
-				1B377FAB1A514159003BA253 /* iflyMSC.framework in Frameworks */,
 				1B377F6D1A5123AF003BA253 /* AudioToolbox.framework in Frameworks */,
+				1B2E08521A5CE09A009E78E3 /* libSunFlower.a in Frameworks */,
 				1B377F6B1A5123A7003BA253 /* SystemConfiguration.framework in Frameworks */,
+				1B2E08501A5CE092009E78E3 /* iflyMSC.framework in Frameworks */,
 				1B377F691A512394003BA253 /* AddressBook.framework in Frameworks */,
 				1B377F671A512389003BA253 /* AVFoundation.framework in Frameworks */,
 				1B3780071A51494B003BA253 /* libPods-SVProgressHUD.a in Frameworks */,
@@ -147,14 +156,16 @@
 		1B377F321A51227A003BA253 = {
 			isa = PBXGroup;
 			children = (
+				1B2E086F1A5D0FA7009E78E3 /* libz.1.2.5.dylib */,
 				1B40E81D1A5B7BCF00C62052 /* Default-568h@2x.png */,
 				1B3780061A51494B003BA253 /* libPods-SVProgressHUD.a */,
+				1B2E08511A5CE09A009E78E3 /* libSunFlower.a */,
 				1B377FE61A5146BF003BA253 /* Pods.xcodeproj */,
 				1B377FE41A514623003BA253 /* CoreTelephony.framework */,
 				1B377FB01A51444E003BA253 /* libz.dylib */,
+				1B2E084F1A5CE092009E78E3 /* iflyMSC.framework */,
 				1B377FAE1A514446003BA253 /* CoreGraphics.framework */,
 				1B377FAC1A514436003BA253 /* Foundation.framework */,
-				1B377FAA1A514158003BA253 /* iflyMSC.framework */,
 				1B377F6C1A5123AF003BA253 /* AudioToolbox.framework */,
 				1B377F6A1A5123A7003BA253 /* SystemConfiguration.framework */,
 				1B377F681A512394003BA253 /* AddressBook.framework */,
@@ -185,6 +196,8 @@
 				1B377F461A51227A003BA253 /* ViewController.m */,
 				1B43134B1A51621A004DD9CE /* DictationViewController.h */,
 				1B43134C1A51621A004DD9CE /* DictationViewController.m */,
+				1B2E08531A5CE5D2009E78E3 /* SpeakerViewController.h */,
+				1B2E08541A5CE5D2009E78E3 /* SpeakerViewController.m */,
 				1B377F481A51227A003BA253 /* Main.storyboard */,
 				1B377F4B1A51227A003BA253 /* Images.xcassets */,
 				1B377F4D1A51227A003BA253 /* LaunchScreen.xib */,
@@ -392,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2E08551A5CE5D2009E78E3 /* SpeakerViewController.m in Sources */,
 				1B377F471A51227A003BA253 /* ViewController.m in Sources */,
 				1B377F441A51227A003BA253 /* AppDelegate.m in Sources */,
 				1B43134D1A51621A004DD9CE /* DictationViewController.m in Sources */,
@@ -529,6 +543,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/lib",
+					"$(PROJECT_DIR)/lib",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,6 +557,7 @@
 					"$(inherited)",
 					"/Users/liweichao/Documents/自己的demo/语音/语音SDK/iOS_voice_1.095_549e46cd/lib/sunflower",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/yuying-bqqrnvzprxnlalabhlblzgwghboi/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/lib/sunflower",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -554,6 +570,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/lib",
+					"$(PROJECT_DIR)/lib",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,6 +584,7 @@
 					"$(inherited)",
 					"/Users/liweichao/Documents/自己的demo/语音/语音SDK/iOS_voice_1.095_549e46cd/lib/sunflower",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/yuying-bqqrnvzprxnlalabhlblzgwghboi/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/lib/sunflower",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

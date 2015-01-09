@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "iflyMSC/IFlySpeechRecognizer.h"
 
-@interface DictationViewController : UIViewController <IFlySpeechRecognizerDelegate>
+@interface DictationViewController : UIViewController <IFlySpeechRecognizerDelegate, UITextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *myTextView;
 
